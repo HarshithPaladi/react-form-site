@@ -13,7 +13,7 @@ function FormComponent() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
         console.log(firstName, lastName, age, emailAddress, address, password);
-        alert("Name: " + firstName + " " + lastName + "\nAge: " + age + "\nEmail Address: " + emailAddress + "\nAddress: " + address + "\nPassword: " + password + "\nFavourite OS: " + favouriteOS)
+        alert("Form Submitted: "+formSubmitStatus+"\nName: " + firstName + " " + lastName + "\nAge: " + age + "\nEmail Address: " + emailAddress + "\nAddress: " + address + "\nPassword: " + password + "\nFavourite OS: " + favouriteOS)
         setFormSubmitStatus(true);
 	};
 
