@@ -13,6 +13,7 @@ function FormComponent() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
         console.log(firstName, lastName, age, emailAddress, address, password);
+        alert("Name: " + firstName + " " + lastName + "\nAge: " + age + "\nEmail Address: " + emailAddress + "\nAddress: " + address + "\nPassword: " + password + "\nFavourite OS: " + favouriteOS)
         setFormSubmitStatus(true);
 	};
 
@@ -96,7 +97,7 @@ function FormComponent() {
 					</div>
 				</form>
 			</div>
-			{formSubmitStatus && (
+			{/* {formSubmitStatus && (
 				<Fragment>
 					<Modal show={formSubmitStatus} onHide={handleClose}>
 						<Modal.Header closeButton>
@@ -118,7 +119,7 @@ function FormComponent() {
 						</Modal.Footer>
 					</Modal>
 				</Fragment>
-			)}
+			)} */}
 		</Fragment>
 	);
 }
